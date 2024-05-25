@@ -156,7 +156,7 @@ up to 3 guests. Meet and start your podcast recording today.
             </ListItem>
             <ListItem title="This space">
               is modular to work well for any 
-              media needs you may have. Whether it's 
+              media needs you may have. Whether it&apos;s 
               Podcasting, Live Streaming, or Corporate 
               Training - Meet Studio is equipped to handle it!
             </ListItem>
