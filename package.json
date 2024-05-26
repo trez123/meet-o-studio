@@ -24,6 +24,7 @@
     "clsx": "^2.1.0",
     "escape-string-regexp": "^5.0.0",
     "fast-glob": "^3.2.12",
+    "firebase-functions": "^5.0.1",
     "framer-motion": "^10.15.2",
     "hast-util-to-text": "^4.0.2",
     "micromark-extension-gfm": "^3.0.0",
