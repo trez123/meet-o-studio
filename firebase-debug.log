@@ -1,0 +1,109 @@
+[debug] [2024-05-26T00:38:11.494Z] ----------------------------------------------------------------------
+[debug] [2024-05-26T00:38:11.498Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2024-05-26T00:38:11.498Z] CLI Version:   13.10.1
+[debug] [2024-05-26T00:38:11.498Z] Platform:      darwin
+[debug] [2024-05-26T00:38:11.498Z] Node Version:  v20.11.1
+[debug] [2024-05-26T00:38:11.498Z] Time:          Sat May 25 2024 19:38:11 GMT-0500 (Eastern Standard Time)
+[debug] [2024-05-26T00:38:11.498Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-26T00:38:11.536Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-26T00:38:11.536Z] > authorizing via signed-in user (silascoley3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/silascoley/Documents/tailwindui-studio/studio-ts
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-26T00:38:11.538Z] Using project from CLI flag: meet-o-studio
+[debug] [2024-05-26T00:38:11.539Z] > refreshing access token with scopes: []
+[debug] [2024-05-26T00:38:11.539Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-26T00:38:11.540Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-26T00:38:11.782Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-26T00:38:11.782Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-26T00:38:11.795Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio [none]
+[debug] [2024-05-26T00:38:12.252Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio 200
+[debug] [2024-05-26T00:38:12.252Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio {"projectId":"meet-o-studio","projectNumber":"428635819832","displayName":"Meet O Studio","name":"projects/meet-o-studio","resources":{"hostingSite":"meet-o-studio"},"state":"ACTIVE","etag":"1_e3050b70-2448-49e1-bf92-db30ee364c33"}
+[info] i  Using project meet-o-studio (Meet O Studio) 
+[info] 
+=== Hosting Setup
+[debug] [2024-05-26T00:38:12.260Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio [none]
+[debug] [2024-05-26T00:38:12.478Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio 200
+[debug] [2024-05-26T00:38:12.478Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio {"projectId":"meet-o-studio","projectNumber":"428635819832","displayName":"Meet O Studio","name":"projects/meet-o-studio","resources":{"hostingSite":"meet-o-studio"},"state":"ACTIVE","etag":"1_e3050b70-2448-49e1-bf92-db30ee364c33"}
+[debug] [2024-05-26T00:38:22.955Z] SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at findDependency (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/utils.js:188:23)
+    at getAstroVersion (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/astro/utils.js:39:45)
+    at discover (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/astro/index.js:17:49)
+    at discover (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:47:38)
+    at async doSetup (/usr/local/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:54:11)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:39:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-26T00:38:26.148Z] ----------------------------------------------------------------------
+[debug] [2024-05-26T00:38:26.149Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2024-05-26T00:38:26.149Z] CLI Version:   13.10.1
+[debug] [2024-05-26T00:38:26.149Z] Platform:      darwin
+[debug] [2024-05-26T00:38:26.150Z] Node Version:  v20.11.1
+[debug] [2024-05-26T00:38:26.150Z] Time:          Sat May 25 2024 19:38:26 GMT-0500 (Eastern Standard Time)
+[debug] [2024-05-26T00:38:26.150Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-26T00:38:26.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-26T00:38:26.188Z] > authorizing via signed-in user (silascoley3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/silascoley/Documents/tailwindui-studio/studio-ts
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-26T00:38:26.190Z] Using project from CLI flag: meet-o-studio
+[debug] [2024-05-26T00:38:26.191Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio [none]
+[debug] [2024-05-26T00:38:26.642Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio 200
+[debug] [2024-05-26T00:38:26.643Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio {"projectId":"meet-o-studio","projectNumber":"428635819832","displayName":"Meet O Studio","name":"projects/meet-o-studio","resources":{"hostingSite":"meet-o-studio"},"state":"ACTIVE","etag":"1_e3050b70-2448-49e1-bf92-db30ee364c33"}
+[info] i  Using project meet-o-studio (Meet O Studio) 
+[info] 
+=== Hosting Setup
+[debug] [2024-05-26T00:38:26.649Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio [none]
+[debug] [2024-05-26T00:38:26.861Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio 200
+[debug] [2024-05-26T00:38:26.861Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meet-o-studio {"projectId":"meet-o-studio","projectNumber":"428635819832","displayName":"Meet O Studio","name":"projects/meet-o-studio","resources":{"hostingSite":"meet-o-studio"},"state":"ACTIVE","etag":"1_e3050b70-2448-49e1-bf92-db30ee364c33"}
+[debug] [2024-05-26T00:38:37.298Z] SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at findDependency (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/utils.js:188:23)
+    at getAstroVersion (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/astro/utils.js:39:45)
+    at discover (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/astro/index.js:17:49)
+    at discover (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:47:38)
+    at async doSetup (/usr/local/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:54:11)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:39:9)
+[error] 
+[error] Error: An unexpected error has occurred.
