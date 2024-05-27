@@ -26,10 +26,11 @@ export function SelfieImage({
       )}
     >
       <div className='border rounded-[2rem] overflow-hidden mb-8'>
-        <foreignObject width={width} suppressHydrationWarning>
+        <foreignObject width={width}>
                 <Image
                   alt=""
                   className="w-full bg-neutral-100 object-cover"
+                  unoptimized
                   {...props}
                 />
         </foreignObject>
