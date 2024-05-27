@@ -78,11 +78,8 @@ function Header({
             filled={logoHovered}
           /> */}
           <Logo
-            className="hidden h-10 sm:block"
             invert={invert}
-            filled={logoHovered}
-          />
-          {/* <Image src={logo} className="hidden w-40 sm:block" alt="logo" unoptimized /> */}
+            filled={logoHovered} />
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
