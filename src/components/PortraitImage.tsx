@@ -45,6 +45,7 @@ export function PortraitImage({
                 alt=""
                 className="w-full bg-neutral-100 object-cover"
                 style={{ aspectRatio: `${width} / ${height}` }}
+                unoptimized
                 {...props}
               />
             </foreignObject>
