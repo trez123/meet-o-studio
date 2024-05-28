@@ -109,7 +109,7 @@ export function Footer() {
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-meet-primary/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
+            <Logo fillOnHover />
           </Link>
           <SocialMedia />
           <p className="text-sm text-meet-secondary">
