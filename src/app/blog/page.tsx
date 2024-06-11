@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
-import { MemberSection } from '@/components/MemberSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
+import { MemberSection } from '@/components/MemberSection'
 
 export const metadata: Metadata = {
   title: 'Blog',

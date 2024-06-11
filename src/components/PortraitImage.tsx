@@ -25,8 +25,9 @@ type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 export function PortraitImage({
   shape = 0,
   className,
+  imageClassName,
   ...props
-}: ImagePropsWithOptionalAlt & { shape?: 0 | 1 | 2 }) {
+}: ImagePropsWithOptionalAlt & { shape?: 0 | 1 | 2 , imageClassName?: string}) {
   let id = useId()
   let { width, height, path } = shapes[shape]
 
@@ -43,7 +44,7 @@ export function PortraitImage({
             <foreignObject width={width} height={height}>
               <Image
                 alt=""
-                className="w-full bg-neutral-100 object-cover"
+                className={clsx("w-full bg-neutral-100 object-cover", imageClassName)}
                 style={{ aspectRatio: `${width} / ${height}` }}
                 unoptimized
                 {...props}

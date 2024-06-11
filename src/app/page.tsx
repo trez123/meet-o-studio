@@ -1,179 +1,250 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 
-import { MemberSection } from '@/components/MemberSection'
+import { Border } from '@/components/Border'
+import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { List, ListItem } from '@/components/List'
+import { GridList, GridListItem } from '@/components/GridList'
+import { PageIntro } from '@/components/PageIntro'
+import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
-import { StylizedImage } from '@/components/StylizedImage'
-import { Testimonial } from '@/components/Testimonial'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import imageLaptop from '@/images/laptop.jpg'
-import landingSelfie from '@/images/landing-selfie.jpeg'
-import mic from '@/images/audiomic.jpg'
-import mic2 from '@/images/mic2.jpg'
-import podcast from '@/images/podcast.jpg'
-import musicStudio from '@/images/musicstudio.jpg'
-import photography from '@/images/clients/photography/photography.svg'
-import editing from '@/images/clients/photography/editing.svg'
-import clientArea from '@/images/clients/photography/client-area.svg'
-import gallery from '@/images/clients/photography/gallary.svg'
-import videography from '@/images/clients/photography/videography.svg'
-import presentations from '@/images/clients/photography/presentation.svg'
-import production from '@/images/clients/photography/production.svg'
-import podcasting from '@/images/clients/photography/podcasting.svg'
-import { SelfieImage } from '@/components/SelfieImage'
-import { url } from 'inspector'
+import { StatList, StatListItem } from '@/components/StatList'
+import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
+import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
+import imageBlakeReid from '@/images/team/blake-reid.jpg'
+import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
+import imageDriesVincent from '@/images/team/dries-vincent.jpg'
+import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
+import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
+import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
+import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
+import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
+import imageMichaelFoster from '@/images/team/michael-foster.jpg'
+import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+
+import landingImage from '@/images/gallery/LSP03685 (2)-min.jpg'
+
+import familyPhoto1 from '@/images/gallery/LSP04774-min.jpg'
+import familyPhoto2 from '@/images/gallery/LSP07807 (2)-min.jpg'
+import familyPhoto3 from '@/images/gallery/LSP05538-min.jpg'
+import familyPhoto4 from '@/images/gallery/DSC03238 copy-min.jpg'
+import familyPhoto5 from '@/images/gallery/DSC01969 (2)-min.jpg'
+
+import portraitPhoto1 from '@/images/gallery/LSP08321 (2)-min.jpg'
+import portraitPhoto2 from '@/images/gallery/LSP08372 (1)-min.jpg'
+import portraitPhoto3 from '@/images/gallery/LSP07571-min.jpg'
+import portraitPhoto4 from '@/images/gallery/LSP00729-min.jpg'
+import portraitPhoto5 from '@/images/gallery/LSP08235 (1)-min.jpg'
+
+import miniPhoto1 from '@/images/gallery/LSP01211 (1)-min.jpg'
+import miniPhoto2 from '@/images/gallery/LSP07342 (2)-min.jpg'
+import miniPhoto3 from '@/images/gallery/LSP08186-min.jpg'
+import miniPhoto4 from '@/images/gallery/LSP05449-min.jpg'
+import miniPhoto5 from '@/images/gallery/LSP01212v3 (1)-min.jpg'
+import miniPhoto6 from '@/images/gallery/LSP07357 (1)-min.jpg'
+
+import { StylizedSection } from '@/components/StylizedSection'
+import clsx from 'clsx'
 import { PortraitImage } from '@/components/PortraitImage'
 
-const options = [
-  ['Photography', photography],
-  ['Editing', editing],
-  ['Client Area', clientArea],
-  ['Gallery', gallery],
-  ['Videography', videography],
-  ['Presentations', presentations],
-  ['Production', production],
-  ['Podcasting', podcasting],
+function Culture() {
+  return (
+    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+      <SectionIntro
+        eyebrow="Our culture"
+        title="Balance your passion with your passion for life."
+        invert
+      >
+        <p>
+          We are a group of like-minded people who share the same core values.
+        </p>
+      </SectionIntro>
+      <Container className="mt-16">
+        <GridList>
+          <GridListItem title="Loyalty" invert>
+            Our team has been with us since the beginning because none of them
+            are allowed to have LinkedIn profiles.
+          </GridListItem>
+          <GridListItem title="Trust" invert>
+            We don’t care when our team works just as long as they are working
+            every waking second.
+          </GridListItem>
+          <GridListItem title="Compassion" invert>
+            You never know what someone is going through at home and we make
+            sure to never find out.
+          </GridListItem>
+        </GridList>
+      </Container>
+    </div>
+  )
+}
+
+const images = [
+  {
+    title: 'Family',
+    people: [
+      {
+        name: 'Leslie Alexander',
+        role: 'Co-Founder / CEO',
+        image: { src: familyPhoto1 },
+        landscape: false
+      },
+      {
+        name: 'Michael Foster',
+        role: 'Co-Founder / CTO',
+        image: { src: familyPhoto2 },
+        landscape: false
+      },
+      {
+        name: 'Dries Vincent',
+        role: 'Partner & Business Relations',
+        image: { src: familyPhoto3 },
+        landscape: false
+      },
+      {
+        name: 'Dries Vincent',
+        role: 'Partner & Business Relations',
+        image: { src: familyPhoto4 },
+        landscape: true
+      },
+      {
+        name: 'Dries Vincent',
+        role: 'Partner & Business Relations',
+        image: { src: familyPhoto5 },
+        landscape: false
+      },
+    ],
+  },
+  {
+    title: 'Portraits',
+    people: [
+      {
+        name: 'Chelsea Hagon',
+        role: 'Senior Developer',
+        image: { src: portraitPhoto1 },
+        landscape: false
+      },
+      {
+        name: 'Emma Dorsey',
+        role: 'Senior Designer',
+        image: { src: portraitPhoto2 },
+        landscape: false
+      },
+      {
+        name: 'Leonard Krasner',
+        role: 'VP, User Experience',
+        image: { src: portraitPhoto3 },
+        landscape: false
+      },
+      {
+        name: 'Blake Reid',
+        role: 'Junior Copywriter',
+        image: { src: portraitPhoto4 },
+        landscape: true
+      },
+      {
+        name: 'Kathryn Murphy',
+        role: 'VP, Human Resources',
+        image: { src: portraitPhoto5 },
+        landscape: false
+      },
+    ],
+  },
+  {
+    title: "Mini's",
+    people: [
+      {
+        name: 'Chelsea Hagon',
+        role: 'Senior Developer',
+        image: { src: miniPhoto1 },
+        landscape: true
+      },
+      {
+        name: 'Emma Dorsey',
+        role: 'Senior Designer',
+        image: { src: miniPhoto2 },
+        landscape: false
+      },
+      {
+        name: 'Leonard Krasner',
+        role: 'VP, User Experience',
+        image: { src: miniPhoto3 },
+        landscape: false
+      },
+      {
+        name: 'Blake Reid',
+        role: 'Junior Copywriter',
+        image: { src: miniPhoto4 },
+        landscape: true
+      },
+      {
+        name: 'Kathryn Murphy',
+        role: 'VP, Human Resources',
+        image: { src: miniPhoto5 },
+        landscape: true
+      },
+      {
+        name: 'Kathryn Murphy',
+        role: 'VP, Human Resources',
+        image: { src: miniPhoto6 },
+        landscape: false
+      },
+    ],
+  }
 ]
 
-function Options() {
+function Gallery() {
   return (
-    <div className='mt-14 py-10 px-2 sm:px-4 sm:mt-12 sm:py-4 lg:mt-16 mx-2 sm:mx-4 relative'>
-      <div className='rounded-3xl bg-meet-primary py-8 sm:py-12'>
-        <Container>
-        <FadeIn className="flex items-center gap-x-8">
-          <p className="mt-6 text-xl text-white">
-            Our Studio is built to cover more than Podcast Recording
-          </p>
-        </FadeIn>
-          <FadeInStagger faster>
-            <ul
-              role="list"
-              className="mt-6 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4 items-center"
-            >
-              {options.map(([option, logo]) => (
-                <li key={option}>
-                  <FadeIn>
-                    <div className='flex gap-2 items-center'>
-                      <Image className='sm:w-12 w-6' src={logo} alt={option} unoptimized />
-                      <h3 className="sm:text-2xl text-white" style={{"fontFamily":"'.New York'",}} >{option}</h3>
-                    </div>
-                  </FadeIn>
-                </li>
-              ))}
-            </ul>
+    <Container className="mt-24 sm:mt-32 lg:mt-40" id='gallery'>
+      <FadeIn>
+      <div className='w-full flex justify-center mb-6 sm: mb-8'>
+        <h1 style={{"fontFamily":"'.New York'",}} className=' block text-center max-w-5xl font-display text-5xl font-bold tracking-tight text-meet-secondary [text-wrap:balance] sm:text-7xl'>GALLERY</h1>
+      </div>
+      </FadeIn>
+      <div className="space-y-24">
+        {images.map((group) => ( 
+          <FadeInStagger key={group.title}>
+            <Border as={FadeIn} />
+            <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+              <FadeIn>
+                <h2 className="font-display text-2xl font-semibold text-meet-secondary" style={{"fontFamily":"'.New York'",}}>
+                  {group.title}
+                </h2>
+              </FadeIn>
+              <div className="lg:col-span-3">
+                <ul
+                  role="list"
+                  className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8"
+                >
+                  {group.people.map((person) => (
+                    <li key={person.name} className={clsx(person.landscape && 'lg:col-span-2')}>
+                      <FadeIn>
+                        <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                          <Image
+                            alt=""
+                            {...person.image}
+                            className="h-96 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
+                          />
+                          {/* <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                            <p className="font-display text-base/6 font-semibold tracking-wide text-white">
+                              {person.name}
+                            </p>
+                            <p className="mt-2 text-sm text-white">
+                              {person.role}
+                            </p>
+                          </div> */}
+                        </div>
+                      </FadeIn>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </FadeInStagger>
-        </Container>
+        ))}
       </div>
-      <div className='absolute w-7 sm:w-10 top-8 sm:top-0 left-0'>
-        <svg  id="svg1" version="1.1" viewBox="0 0 9.8420754 10.24519" xmlns="http://www.w3.org/2000/svg">
-          <defs id="defs1"/>
-          <g id="layer1" transform="translate(-6.486444,-100.59057)">
-            <path id="path34-8" style={{"fill":"none","fillOpacity":"1","stroke":"#b05f1c","strokeWidth":"0.79375","strokeLinecap":"round","strokeDasharray":"none","strokeOpacity":"1"}} d="m 4.525987,186.10387 v -0.40311 a 9.048325,9.048325 135 0 1 9.048325,-9.04833" transform="translate(2.357332,-75.66499)"/>
-          </g>
-        </svg>
-      </div>
-      <div className='absolute w-7 sm:w-10 bottom-8 sm:bottom-0 right-0'>
-        <svg  id="svg1" version="1.1" viewBox="0 0 9.8420754 10.24519" xmlns="http://www.w3.org/2000/svg">
-          <defs id="defs1"/>
-          <g id="layer1" transform="translate(-211.91697,-200.08572)">
-            <path id="path34-8-9-3" style={{"fill":"none","fillOpacity":"1","stroke":"#b05f1c","strokeWidth":"0.79375","strokeLinecap":"round","strokeDasharray":"none","strokeOpacity":"1"}} d="m 4.525987,186.10387 v -0.40311 a 9.048325,9.048325 135 0 1 9.048325,-9.04833" transform="rotate(180,112.94408,193.29323)"/>
-          </g>
-        </svg>
-      </div>
-  </div>
-
-  )
-}
-
-function PhotographyPortraits() {
-  return (
-    <>
-      <SectionIntro
-        title="PHOTOGRAPHY PORTRAITS"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-                  Our photography packages include consultations, 
-          storyboards, online galleries, retouched images, 
-          and image coaching. We cover engagements, birthdays, 
-          portraits, and more. Enhance your session with styling, 
-          creative direction, and printing services.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <FadeInStagger className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <FadeIn>
-            <PortraitImage shape={1} src={mic} alt="Photography portrait" />
-          </FadeIn>
-          <div className='sm:mt-32'>
-            <FadeIn>
-              <PortraitImage shape={1} src={mic2} alt="Photography portrait" />
-            </FadeIn>
-          </div>
-          <FadeIn>
-            <PortraitImage shape={1} src={podcast} alt="Photography portrait" />
-          </FadeIn>
-        </FadeInStagger>
-      </Container>
-    </>
-  )
-}
-
-function Services() {
-  return (
-    <>
-      <SectionIntro
-        eyebrow="Services"
-        title="PODCAST AND AUDIO RECORDING STUDIO"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-        Record and stream your Audio & Podcast Recording 
-All in One Space. Record clear capture for you and 
-up to 3 guests. Meet and start your podcast recording today.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
-                src={musicStudio}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
-              />
-            </FadeIn>
-          </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Elevate">
-              your studio experience and 
-              tailor it to your exact needs with our gear 
-              rentals
-            </ListItem>
-            <ListItem title="This space">
-              is modular to work well for any 
-              media needs you may have. Whether it&apos;s 
-              Podcasting, Live Streaming, or Corporate 
-              Training - Meet Studio is equipped to handle it!
-            </ListItem>
-            <ListItem title="Travel Light?">
-              we got you covered! Just walk 
-              with your favourite camera!
-            </ListItem>
-            <ListItem title="Ideal">
-              for small to medium-sized productions 
-              individual and group portrait shoots, green 
-              screen, editorial, music video &ashion product
-              launches.
-            </ListItem>
-          </List>
-        </div>
-      </Container>
-    </>
+    </Container>
   )
 }
 
@@ -182,48 +253,52 @@ export const metadata: Metadata = {
     'Meet Studio.Co in Mandeville provides a versatile space for photo and video shoots, podcasts, and live streams, featuring a white Cyc wall, sound booth, and dressing room.',
 }
 
+
 export default async function Home() {
   return (
     <>
-      <Container className="mt-24 sm:mt-32">
-        <FadeInStagger>
-          <div className='flex justify-center items-center sm:flex-row gap-8 flex-col-reverse lg:justify-end lg:pr-12'>
-            <div className='sm:w-1/2'>
-              <FadeIn>
-                  <h1 className="font-display text-5xl font-bold tracking-tight text-meet-primary lg:leading-[6rem] [text-wrap:balance] lg:text-[5.5rem]">
-                      ALL-WHITE STUDIO WITH EVERYTHING YOU NEED IN ONE PLACE
-                  </h1>
-              </FadeIn>
+    <div className='relative'>
+      <PageIntro eyebrow="Overview" title="Welcome to Meet Studio.Co">
+        <div className='text-meet-secondary'>
+        <p>
+        Located in the heart of Mandeville, Meet Studio.Co is the perfect space for your next photo, video shoot podcast, or live stream. Studio.Co features a fully lit white Cyc wall, sound booth, editing bay, board room, and dressing room. 
+        </p>
+        <div className="mt-10 max-w-2xl space-y-6">
+          <p>
+          Meet with your team/clients in a collaborative space with an on-demand office and large screens for your idea board. You can enjoy your time in a large cozy space and our private dressing room will be ready for all your fabulous looks and glam team to set up and make you look like a million bucks. 
+          </p>
+          <p>
+          All sessions include pre-session consultations, time and talent, props and backgrounds, professional editing and retouching, & an online gallery.  So whether it’s sharing your new idea, an elaborate elopement, or growing your business, our goal is to provide a space where you can be completely yourself.
+          </p>
+        </div>
+        </div>
+      </PageIntro>
+      <div className='absolute right-[-18rem] top-[-10rem] lg:block hidden'>
+      <FadeIn>
+      <div className="group relative overflow-hidden rounded-3xl">
+          <PortraitImage className="h-[45rem] w-full" imageClassName='absolute left-[-12rem]' shape={0} src={landingImage} alt="Photography portrait" />
+        </div>
+        </FadeIn>
+      </div>
+    </div>
+      <StylizedSection left={true}>
+          <Container>
+            <FadeIn>
+            <div className='flex flex-col items-center'>
+              <h1 style={{"fontFamily":"'.New York'",}} className='mt-6 block text-center max-w-5xl font-display text-5xl font-bold tracking-tight text-white [text-wrap:balance] sm:text-7xl'>
+                ONE STUDIO INFINITE IMAGES <br/>TO CREATE
+              </h1>
+              <div className='size-12 sm:size-20 rounded-full border-4 sm:border-8 border-white bg-meet-primary mt-2 sm:mt-5'></div>
             </div>
-              <div className='sm:w-1/2'>
-                <FadeIn>
-                <SelfieImage 
-                src={landingSelfie} 
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"/>
-                </FadeIn>
-              </div>
-          </div>
-          <FadeIn>
-            <p className="mt-6 text-xl text-meet-secondary">
-              Meet Studio.Co in Mandeville provides a versatile space for photo and video shoots, podcasts, and live 
-                streams, featuring a white Cyc wall, sound booth, and dressing room.
-            </p>
-          </FadeIn>
-        </FadeInStagger>
-      </Container>
+            </FadeIn>
+          </Container>
+      </StylizedSection>
 
-      <Options />
+      <Gallery />
 
-      <PhotographyPortraits />
-
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-      />
-
-      <Services />
-
-      <MemberSection />
+      <ContactSection />
     </>
   )
 }
+
+
