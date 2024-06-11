@@ -85,7 +85,7 @@ function PhotographyPortraits() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        Whether you’re podcasting, live streaming, or conducting 
+        Whether you&apos;re podcasting, live streaming, or conducting 
 corporate training,our state-of-the-art studio is equipped 
 to handle all your media needs. Featuring modular setups, 
 clear audio capture for up to 4 guests, multiple camera 
@@ -131,7 +131,7 @@ function Services() {
 individual \and group portrait shoots, fashion 
 editorials, green screen work, music videos, 
 and product launches. Our space is designed to 
-inspire creativity and ensure your project's success.
+inspire creativity and ensure your project&apos;s success.
         </p>
       </SectionIntro>
       <Container className="mt-16">
