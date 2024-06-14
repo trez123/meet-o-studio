@@ -27,9 +27,6 @@ jobs:
       - name: Build Next.js application
         run: npm run build
 
-      - name: Export Next.js application
-        run: npm run export
-
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
