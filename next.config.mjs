@@ -22,6 +22,9 @@ const nextConfig = {
     ],
   },
   output: 'export',
+  experimental: {
+    appDir: true,
+  },
 }
 
 function remarkMDXLayout(source, metaName) {
