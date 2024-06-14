@@ -23,7 +23,7 @@ import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
 
-import landingImage from '@/images/gallery/LSP03685 (2)-min.jpg'
+import landingImage from '@/images/gallery/landing.jpg'
 
 import familyPhoto1 from '@/images/gallery/LSP04774-min.jpg'
 import familyPhoto2 from '@/images/gallery/LSP07807 (2)-min.jpg'
