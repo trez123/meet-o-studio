@@ -20,7 +20,8 @@ const nextConfig = {
       'meet-o-studio.firebaseapp.com',
       'meet-o-studio.web.app',
     ],
-    loader: 'default',
+    loader: 'custom',
+    path: '',
   },
   output: 'export',
 }
