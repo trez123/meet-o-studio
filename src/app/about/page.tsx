@@ -63,7 +63,7 @@ function Options() {
                 <li key={option}>
                   <FadeIn>
                     <div className='flex gap-2 items-center'>
-                      <Image className='sm:w-12 w-6' src={logo} alt={option} loader={customLoader} />
+                      <Image className='sm:w-12 w-6' src={logo} alt={option} />
                       <h3 className="sm:text-2xl text-white" style={{"fontFamily":"'.New York'",}} >{option}</h3>
                     </div>
                   </FadeIn>

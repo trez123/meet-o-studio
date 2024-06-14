@@ -45,7 +45,6 @@ function CaseStudies({
                       src={caseStudy.logo}
                       alt=""
                       className="h-16 w-16 flex-none"
-                      loader={customLoader}
                     />
                     <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
                       {caseStudy.client}
@@ -126,7 +125,7 @@ function Clients() {
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} loader={customLoader} />
+                  <Image src={logo} alt={client} />
                 </Border>
               </FadeIn>
             </li>

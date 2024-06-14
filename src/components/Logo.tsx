@@ -60,7 +60,6 @@ export function Logo({
       <Image
           alt="Logo"
           className='w-20 sm:w-32'
-          loader={customLoader}
           src={invert ?  logoWhite : logo}
         />
   )

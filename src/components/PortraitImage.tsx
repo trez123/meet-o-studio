@@ -47,7 +47,6 @@ export function PortraitImage({
                 alt=""
                 className={clsx("w-full bg-neutral-100 object-cover", imageClassName)}
                 style={{ aspectRatio: `${width} / ${height}` }}
-                loader={customLoader}
                 {...props}
               />
             </foreignObject>

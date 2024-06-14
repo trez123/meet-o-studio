@@ -31,7 +31,6 @@ export function SelfieImage({
                 <Image
                   alt=""
                   className="w-full bg-neutral-100 object-cover"
-                  loader={customLoader}
                   {...props}
                 />
         </foreignObject>
