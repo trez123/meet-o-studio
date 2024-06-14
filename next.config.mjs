@@ -15,8 +15,13 @@ import { unifiedConditional } from 'unified-conditional'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   images: {
-    domains: ['meetstudioco.com', 'meet-o-studio.firebaseapp.com', 'meet-o-studio.web.app'],
+    domains: [
+      'meetstudioco.com',
+      'meet-o-studio.firebaseapp.com',
+      'meet-o-studio.web.app',
+    ],
   },
+  output: 'export',
 }
 
 function remarkMDXLayout(source, metaName) {
