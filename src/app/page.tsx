@@ -277,7 +277,7 @@ export default async function Home() {
       <div className='absolute right-[-18rem] top-[-10rem] lg:block hidden'>
       <FadeIn>
       <div className="group relative overflow-hidden rounded-3xl">
-          <PortraitImage className="h-[45rem] w-full" imageClassName='absolute left-[-12rem]' shape={0} src={landingImage} alt="Photography portrait" />
+          <PortraitImage className="h-[45rem] w-full" imageClassName='absolute left-[-12rem]' shape={0} src={landingImage} alt="Photography portrait"/>
         </div>
         </FadeIn>
       </div>

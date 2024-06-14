@@ -21,7 +21,6 @@ const nextConfig = {
   //     'meet-o-studio.web.app',
   //   ],
   // },
-  output: 'export',
 }
 
 function remarkMDXLayout(source, metaName) {
