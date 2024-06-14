@@ -1,6 +1,7 @@
 import { useId } from 'react'
 import Image, { type ImageProps } from 'next/image'
 import clsx from 'clsx'
+import { customLoader } from './CustomLoader'
 
 const shape = 
   {
@@ -30,7 +31,7 @@ export function SelfieImage({
                 <Image
                   alt=""
                   className="w-full bg-neutral-100 object-cover"
-                  unoptimized
+                  loader={customLoader}
                   {...props}
                 />
         </foreignObject>

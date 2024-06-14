@@ -1,6 +1,7 @@
 import { useId } from 'react'
 import Image, { type ImageProps } from 'next/image'
 import clsx from 'clsx'
+import { customLoader } from './CustomLoader'
 
 const shapes = [
   {
@@ -45,7 +46,7 @@ export function StylizedImage({
                 alt=""
                 className="w-full bg-neutral-100 object-cover"
                 style={{ aspectRatio: `${width} / ${height}` }}
-                unoptimized
+                loader={customLoader}
                 {...props}
               />
             </foreignObject>

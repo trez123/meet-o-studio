@@ -1,6 +1,7 @@
 import { useId } from 'react'
 import Image, { type ImageProps } from 'next/image'
 import clsx from 'clsx'
+import { customLoader } from './CustomLoader'
 
 const shapes = [
   {
@@ -46,7 +47,7 @@ export function PortraitImage({
                 alt=""
                 className={clsx("w-full bg-neutral-100 object-cover", imageClassName)}
                 style={{ aspectRatio: `${width} / ${height}` }}
-                unoptimized
+                loader={customLoader}
                 {...props}
               />
             </foreignObject>

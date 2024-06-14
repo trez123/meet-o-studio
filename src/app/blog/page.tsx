@@ -10,6 +10,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 import { MemberSection } from '@/components/MemberSection'
+import { customLoader } from '@/components/CustomLoader'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -54,6 +55,7 @@ export default async function Blog() {
                               alt=""
                               {...article.author.image}
                               className="h-12 w-12 object-cover grayscale"
+                              loader={customLoader}
                             />
                           </div>
                           <div className="text-sm text-neutral-950">

@@ -32,6 +32,7 @@ import { ContactSection } from '@/components/ContactSection'
 import { Border } from '@/components/Border'
 import { useState } from 'react'
 import { FAQs } from '@/components/Faqs'
+import { customLoader } from '@/components/CustomLoader'
 
 const options = [
   ['Photography', photography],
@@ -62,7 +63,7 @@ function Options() {
                 <li key={option}>
                   <FadeIn>
                     <div className='flex gap-2 items-center'>
-                      <Image className='sm:w-12 w-6' src={logo} alt={option} unoptimized />
+                      <Image className='sm:w-12 w-6' src={logo} alt={option} loader={customLoader} />
                       <h3 className="sm:text-2xl text-white" style={{"fontFamily":"'.New York'",}} >{option}</h3>
                     </div>
                   </FadeIn>

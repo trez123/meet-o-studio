@@ -20,6 +20,7 @@ import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
 import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
+import { customLoader } from '@/components/CustomLoader'
 
 function CaseStudies({
   caseStudies,
@@ -44,7 +45,7 @@ function CaseStudies({
                       src={caseStudy.logo}
                       alt=""
                       className="h-16 w-16 flex-none"
-                      unoptimized
+                      loader={customLoader}
                     />
                     <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
                       {caseStudy.client}
@@ -125,7 +126,7 @@ function Clients() {
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client} loader={customLoader} />
                 </Border>
               </FadeIn>
             </li>

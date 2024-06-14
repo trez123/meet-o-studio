@@ -8,6 +8,7 @@ import {
   useScroll,
   useTransform,
 } from 'framer-motion'
+import { customLoader } from './CustomLoader'
 
 const MotionImage = motion(Image)
 
@@ -32,7 +33,7 @@ export function GrayscaleTransitionImage(
         className="pointer-events-none absolute left-0 top-0 w-full opacity-0 transition duration-300 group-hover:opacity-100"
         aria-hidden="true"
       >
-        <Image alt="" {...props} />
+        <Image alt="" {...props} loader={customLoader}/>
       </div>
     </div>
   )
