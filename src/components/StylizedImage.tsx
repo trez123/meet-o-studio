@@ -1,7 +1,6 @@
 import { useId } from 'react'
 import Image, { type ImageProps } from 'next/image'
 import clsx from 'clsx'
-import { customLoader } from './CustomLoader'
 
 const shapes = [
   {

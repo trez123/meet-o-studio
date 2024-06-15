@@ -8,7 +8,6 @@ import {
   useScroll,
   useTransform,
 } from 'framer-motion'
-import { customLoader } from './CustomLoader'
 
 const MotionImage = motion(Image)
 

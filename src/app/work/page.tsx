@@ -20,7 +20,6 @@ import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
 import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
-import { customLoader } from '@/components/CustomLoader'
 
 function CaseStudies({
   caseStudies,

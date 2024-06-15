@@ -3,7 +3,6 @@ import clsx from 'clsx'
 import Image, { type ImageProps } from 'next/image'
 import logo from '@/images/logo.png'
 import logoWhite from '@/images/logo-white.png'
-import { customLoader } from './CustomLoader'
 
 export function Logomark({
   invert = false,

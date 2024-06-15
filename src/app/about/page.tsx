@@ -31,7 +31,6 @@ import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
 import { Border } from '@/components/Border'
 import { FAQs } from '@/components/Faqs'
-import { customLoader } from '@/components/CustomLoader'
 
 const options = [
   ['Photography', photography],

@@ -10,7 +10,6 @@ import { PageIntro } from '@/components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 import { MemberSection } from '@/components/MemberSection'
-import { customLoader } from '@/components/CustomLoader'
 
 export const metadata: Metadata = {
   title: 'Blog',

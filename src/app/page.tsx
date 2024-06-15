@@ -47,7 +47,6 @@ import miniPhoto6 from '@/images/gallery/LSP07357 (1)-min.jpg'
 import { StylizedSection } from '@/components/StylizedSection'
 import clsx from 'clsx'
 import { PortraitImage } from '@/components/PortraitImage'
-import { customLoader } from '@/components/CustomLoader'
 
 function Culture() {
   return (

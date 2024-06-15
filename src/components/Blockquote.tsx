@@ -2,7 +2,6 @@ import Image, { type ImageProps } from 'next/image'
 import clsx from 'clsx'
 
 import { Border } from '@/components/Border'
-import { customLoader } from './CustomLoader'
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 
