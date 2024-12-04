@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "meet-o-studio"
-  }
+    "prod": "meet-o-studio"
+  },
+  "targets": {},
+  "etags": {},
+  "extends": "next/core-web-vitals"
 }
