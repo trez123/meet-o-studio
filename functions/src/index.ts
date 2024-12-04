@@ -243,9 +243,6 @@ exports.sendEmail = functions.https.onRequest(async (req: any, res: any) => {
                   <div style="font-weight: normal; padding: 16px 24px 16px 24px">
                     Message: {{message}}
                   </div>
-                  <div style="font-weight: normal; padding: 16px 24px 16px 24px">
-                    Budget: {{budget}}
-                  </div>
                   <div style="padding: 16px 24px 40px 24px">
                     <img
                       alt="Illustration"
